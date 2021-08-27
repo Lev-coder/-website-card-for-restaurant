@@ -135,16 +135,26 @@ table {
   border-spacing: 0;
 }
 
-.header__banner-img {
-  width: 100px;
-  height: 10px;
+.header {
+  text-align: center;
+  overflow: hidden;
 }
-
 .header__banner {
   position: relative;
-  width: 1px;
+  max-width: 1140px;
+  height: 750px;
 }
-
+.header__title {
+  margin-left: 55px;
+  margin-top: 50px;
+  position: absolute;
+  font-size: 68px;
+  letter-spacing: 5px;
+  word-wrap: break-word;
+  color: #fff;
+  width: 0.7em;
+}
 .header__banner-img {
-  width: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }

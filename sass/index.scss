@@ -1,18 +1,29 @@
 @import './reset.scss';
+
+
 .header {
-    &__banner-img {
-        width: 100px;
-        height: 10px;
+    text-align: center;
+    overflow: hidden;
+
+    &__banner{
+        position: relative;
+        max-width: 1140px;
+        height: 750px;
     }
-}
 
-.header__banner {
-    position: relative;
-    width: 1px;
-}
+    &__title
+    {
+        margin-left: 55px;
+        margin-top: 50px;
+        position: absolute;
+        font-size: 68px;
+        letter-spacing: 5px;
+        word-wrap: break-word;
+        color: #fff;
+        width: .7em; 
+    }
 
-.header__title {}
-
-.header__banner-img {
-    width: 10px;
+    &__banner-img {
+        object-fit: cover;
+    }
 }
