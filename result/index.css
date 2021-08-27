@@ -135,6 +135,11 @@ table {
   border-spacing: 0;
 }
 
+.content {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
 .header {
   text-align: center;
   overflow: hidden;

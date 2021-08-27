@@ -1,5 +1,9 @@
 @import './reset.scss';
 
+.content{
+    max-width: 1140px;
+    margin: 0 auto;
+}
 
 .header {
     text-align: center;
@@ -25,5 +29,49 @@
 
     &__banner-img {
         object-fit: cover;
+    }
+}
+
+.main
+{
+    &__title{
+
+    }
+}
+
+.dishes
+{
+    &__title{
+
+    }
+
+    &__dishe-left{
+
+    }
+
+    &____dishe-centre{
+
+    }
+
+    &__dishe-right{
+
+    }
+}
+
+.footer
+{
+
+}
+
+.contacts{
+    &__social-networks{
+        &-items{}
+        &-facebook{}
+        &-instagram{}
+        &-telegram{}
+    }
+    &__other-types{
+        &-email{}
+        &-phon{}
     }
 }
