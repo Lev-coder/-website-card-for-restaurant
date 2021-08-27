@@ -1,1 +1,18 @@
 @import './reset.scss';
+.header {
+    &__banner-img {
+        width: 100px;
+        height: 10px;
+    }
+}
+
+.header__banner {
+    position: relative;
+    width: 1px;
+}
+
+.header__title {}
+
+.header__banner-img {
+    width: 10px;
+}
