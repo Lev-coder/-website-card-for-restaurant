@@ -1,6 +1,8 @@
 @import './reset.scss';
+@import './fonts.scss';
+@import './media-requests.scss';
 
-.content{
+.content {
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -9,14 +11,13 @@
     text-align: center;
     overflow: hidden;
 
-    &__banner{
+    &__banner {
         position: relative;
         max-width: 1140px;
         height: 750px;
     }
 
-    &__title
-    {
+    &__title {
         margin-left: 55px;
         margin-top: 50px;
         position: absolute;
@@ -24,7 +25,7 @@
         letter-spacing: 5px;
         word-wrap: break-word;
         color: #fff;
-        width: .7em; 
+        width: .7em;
     }
 
     &__banner-img {
@@ -32,46 +33,158 @@
     }
 }
 
-.main
-{
-    &__title{
+.main {
+    &__title {
+        font-family: 'Azeret-Mono';
+        font-size: 48px;
+        text-align: center;
+        letter-spacing: 1px;
 
+        margin-top: 50px;
+    }
+
+    &__text {
+        font-family: 'Roboto-Light';
+        font-size: 38px;
+        text-align: left;
+
+        margin-top: 50px;
     }
 }
 
-.dishes
-{
-    &__title{
+.dishes {
+
+    &__item{
+        max-width: 1140px;
+        display: flex;
+        margin-top: 50px;
+    }
+
+    &__dishe-left {
 
     }
 
-    &__dishe-left{
-
+    &__dishe-centre {
     }
 
-    &____dishe-centre{
 
+    &__dishe-right {
     }
 
-    &__dishe-right{
+    &__title
+    {
+        &__left
+        {
+            font-family: 'Azeret-Mono';
+            font-size: 24px;
+            text-align: left;
+        }
 
+        &__right
+        {
+            font-family: 'Azeret-Mono';
+            font-size: 24px;
+            text-align: right;
+        }
+
+        &__left-from-centre
+        {
+            font-family: 'Azeret-Mono';
+            font-size: 24px;
+            text-align: right;
+        }
+
+        &__right-from-centre
+        {
+            font-family: 'Azeret-Mono';
+            font-size: 24px;
+            text-align: left;
+        }
+    }
+
+    &__description
+    {
+        &__left
+        {
+            margin-left: 50px;
+        }
+
+        &__right
+        {
+            margin-right: 50px;
+        }
+
+        &__left-from-centre
+        {
+            margin-right: 50px;
+
+        }
+
+        &__right-from-centre
+        {
+            margin-left: 50px;
+        }
+    }
+
+    &__img{
+        &__left
+        {
+            width: 400px;
+        }
+
+        &__centre
+        {
+            width: 500px;
+        }
+
+        &__right
+        {
+            width: 350px;
+        }
+    }
+
+    &__text
+    {
+        font-family: 'Roboto-Light';
+        font-size: 18px;
+        margin-top: 24px;
+
+        &-item
+        {
+            font-family: 'Roboto-Light';
+            line-height: 24px;
+            font-size: 18px;
+            margin-top: 24px;
+        }
+
+        &__left
+        {
+            text-align: left;
+        }
+
+        &__right
+        {
+            text-align: right;
+        }
     }
 }
 
-.footer
-{
+.footer {}
 
-}
+.contacts {
+    &__social-networks {
+        &-items {}
 
-.contacts{
-    &__social-networks{
-        &-items{}
-        &-facebook{}
-        &-instagram{}
-        &-telegram{}
+        &-facebook {}
+
+        &-instagram {}
+
+        &-telegram {}
     }
-    &__other-types{
-        &-email{}
-        &-phon{}
+
+    &__other-types {
+        &-email {}
+
+        &-phon {}
     }
 }

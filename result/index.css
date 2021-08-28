@@ -135,6 +135,14 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../asserts/fonts/Roboto/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "Azeret-Mono";
+  src: url("/asserts/fonts/Azeret_Mono/static/AzeretMono-Black.ttf");
+}
 .content {
   max-width: 1140px;
   margin: 0 auto;
@@ -162,4 +170,84 @@ table {
 .header__banner-img {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.main__title {
+  font-family: "Azeret-Mono";
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: 50px;
+}
+.main__text {
+  font-family: "Roboto-Light";
+  font-size: 38px;
+  text-align: left;
+  margin-top: 50px;
+}
+
+.dishes__item {
+  max-width: 1140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+}
+.dishes__title__left {
+  font-family: "Azeret-Mono";
+  font-size: 24px;
+  text-align: left;
+}
+.dishes__title__right {
+  font-family: "Azeret-Mono";
+  font-size: 24px;
+  text-align: right;
+}
+.dishes__title__left-from-centre {
+  font-family: "Azeret-Mono";
+  font-size: 24px;
+  text-align: right;
+}
+.dishes__title__right-from-centre {
+  font-family: "Azeret-Mono";
+  font-size: 24px;
+  text-align: left;
+}
+.dishes__description__left {
+  margin-left: 50px;
+}
+.dishes__description__right {
+  margin-right: 50px;
+}
+.dishes__description__left-from-centre {
+  margin-right: 50px;
+}
+.dishes__description__right-from-centre {
+  margin-left: 50px;
+}
+.dishes__img__left {
+  width: 400px;
+}
+.dishes__img__centre {
+  width: 500px;
+}
+.dishes__img__right {
+  width: 350px;
+}
+.dishes__text {
+  font-family: "Roboto-Light";
+  font-size: 18px;
+  margin-top: 24px;
+}
+.dishes__text-item {
+  font-family: "Roboto-Light";
+  line-height: 24px;
+  font-size: 18px;
+  margin-top: 24px;
+}
+.dishes__text__left {
+  text-align: left;
+}
+.dishes__text__right {
+  text-align: right;
 }
