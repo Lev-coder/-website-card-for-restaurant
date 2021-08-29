@@ -1,0 +1,137 @@
+@media screen and (max-width: 1250px) {
+
+    .main {
+        &__text {
+            margin-left: 50px;
+        }
+    }
+
+    .dishes {
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__title {
+            &__left {
+                text-align: left;
+            }
+
+            &__right {
+                text-align: left;
+            }
+
+            &__left-from-centre {
+                text-align: left;
+            }
+
+            &__right-from-centre {
+                text-align: left;
+            }
+        }
+
+        &__description {
+            &__left {
+                margin-left: 50px;
+                margin-top: 50px;
+            }
+
+            &__right {
+                margin-left: 50px;
+            }
+
+            &__left-from-centre {
+                margin-left: 50px;
+
+            }
+
+            &__right-from-centre {
+                margin-left: 50px;
+            }
+        }
+
+        &__img {
+
+            margin: 0 auto;
+            max-width: 100%;
+
+            &__centre {
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+
+            &__right {
+                margin-top: 50px;
+            }
+        }
+
+        &__text {
+            &-item {
+                text-align: left;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+    .main {
+        &__text {
+            text-align: justify;
+            margin: 5px;
+        }
+    }
+
+    .dishes {
+
+        &__img {
+            max-width: 100%;
+        }
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form {
+
+        &__button {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+    .main {
+
+        &__title {
+            font-size: 24px;
+        }
+
+        &__text {
+            font-size: 24px;
+            margin: 15px;
+        }
+    }
+
+    .dishes {
+        &__img {
+            max-width: 100%;
+        }
+    }
+
+    .form {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .form {
+        max-width: 100%;
+    }
+}

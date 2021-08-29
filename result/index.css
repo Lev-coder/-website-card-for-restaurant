@@ -141,8 +141,65 @@ table {
 }
 @font-face {
   font-family: "Azeret-Mono";
-  src: url("/asserts/fonts/Azeret_Mono/static/AzeretMono-Black.ttf");
+  src: url("/asserts/fonts/Azeret_Mono/AzeretMono-Black.ttf");
 }
+.header__title {
+  margin-left: 55px;
+  margin-top: 50px;
+  position: absolute;
+  font-size: 68px;
+  letter-spacing: 5px;
+  word-wrap: break-word;
+  color: #fff;
+  width: 0.7em;
+}
+
+.main__title {
+  font-family: "Azeret-Mono";
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.form__title, .contacts__title {
+  font-family: "Azeret-Mono";
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.dishes__title__right-from-centre, .dishes__title__left-from-centre, .dishes__title__right, .dishes__title__left {
+  font-family: "Azeret-Mono";
+  font-size: 24px;
+}
+
+.main__text {
+  font-family: "Roboto-Light";
+  font-size: 38px;
+  text-align: left;
+}
+
+.dishes__text-item {
+  font-family: "Roboto-Light";
+  line-height: 24px;
+  font-size: 18px;
+  margin-top: 24px;
+}
+
+.form__input-item, .contacts__link, .contacts__text {
+  font-family: "Roboto-Light";
+  letter-spacing: 1px;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.form__button {
+  font-size: 24px;
+  font-family: "Roboto-Light";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 .content {
   max-width: 1140px;
   margin: 0 auto;
@@ -157,32 +214,15 @@ table {
   max-width: 1140px;
   height: 750px;
 }
-.header__title {
-  margin-left: 55px;
-  margin-top: 50px;
-  position: absolute;
-  font-size: 68px;
-  letter-spacing: 5px;
-  word-wrap: break-word;
-  color: #fff;
-  width: 0.7em;
-}
 .header__banner-img {
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .main__title {
-  font-family: "Azeret-Mono";
-  font-size: 48px;
-  text-align: center;
-  letter-spacing: 1px;
   margin-top: 50px;
 }
 .main__text {
-  font-family: "Roboto-Light";
-  font-size: 38px;
-  text-align: left;
   margin-top: 50px;
 }
 
@@ -194,23 +234,15 @@ table {
   margin-top: 50px;
 }
 .dishes__title__left {
-  font-family: "Azeret-Mono";
-  font-size: 24px;
   text-align: left;
 }
 .dishes__title__right {
-  font-family: "Azeret-Mono";
-  font-size: 24px;
   text-align: right;
 }
 .dishes__title__left-from-centre {
-  font-family: "Azeret-Mono";
-  font-size: 24px;
   text-align: right;
 }
 .dishes__title__right-from-centre {
-  font-family: "Azeret-Mono";
-  font-size: 24px;
   text-align: left;
 }
 .dishes__description__left {
@@ -226,28 +258,93 @@ table {
   margin-left: 50px;
 }
 .dishes__img__left {
-  width: 400px;
+  max-width: 500px;
 }
 .dishes__img__centre {
-  width: 500px;
+  max-width: 500px;
 }
 .dishes__img__right {
-  width: 350px;
-}
-.dishes__text {
-  font-family: "Roboto-Light";
-  font-size: 18px;
-  margin-top: 24px;
+  max-width: 500px;
 }
 .dishes__text-item {
-  font-family: "Roboto-Light";
-  line-height: 24px;
-  font-size: 18px;
-  margin-top: 24px;
+  width: 100%;
 }
 .dishes__text__left {
   text-align: left;
 }
 .dishes__text__right {
   text-align: right;
+}
+
+.footer {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contacts__item {
+  margin-bottom: 50px;
+}
+.contacts__title {
+  margin-bottom: 20px;
+}
+.contacts__text-line {
+  letter-spacing: 1px;
+  margin-top: 24px;
+}
+.contacts__link {
+  text-transform: uppercase;
+  color: #000;
+}
+.contacts__social-networks-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contacts__social-networks-items {
+  margin-right: 24px;
+}
+
+.form {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+.form__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form__item input,
+.form textarea {
+  display: block;
+  background-color: white;
+  text-align: center;
+  width: 100%;
+  padding: 10px 0px;
+}
+.form__input-item {
+  border: 1px solid black;
+}
+.form__message-text {
+  height: 300px;
+}
+.form__button {
+  margin: 0 auto;
+  width: 300px;
+  background-color: white;
+  margin-bottom: 50px;
+}
+.form__button:hover {
+  background-color: black;
+  color: white;
 }

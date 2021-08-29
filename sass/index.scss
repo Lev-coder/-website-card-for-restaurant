@@ -1,6 +1,5 @@
 @import './reset.scss';
-@import './fonts.scss';
-@import './media-requests.scss';
+@import './fonts-style.scss';
 
 .content {
     max-width: 1140px;
@@ -18,14 +17,7 @@
     }
 
     &__title {
-        margin-left: 55px;
-        margin-top: 50px;
-        position: absolute;
-        font-size: 68px;
-        letter-spacing: 5px;
-        word-wrap: break-word;
-        color: #fff;
-        width: .7em;
+        @extend %logo-text;
     }
 
     &__banner-img {
@@ -35,18 +27,12 @@
 
 .main {
     &__title {
-        font-family: 'Azeret-Mono';
-        font-size: 48px;
-        text-align: center;
-        letter-spacing: 1px;
-
+        @extend %heading-1;
         margin-top: 50px;
     }
 
     &__text {
-        font-family: 'Roboto-Light';
-        font-size: 38px;
-        text-align: left;
+        @extend %text-1;
 
         margin-top: 50px;
     }
@@ -54,137 +40,174 @@
 
 .dishes {
 
-    &__item{
+    &__item {
         max-width: 1140px;
         display: flex;
         margin-top: 50px;
     }
 
-    &__dishe-left {
+    &__title {
+        &__left {
+            @extend %heading-3;
 
-    }
-
-    &__dishe-centre {
-    }
-
-
-    &__dishe-right {
-    }
-
-    &__title
-    {
-        &__left
-        {
-            font-family: 'Azeret-Mono';
-            font-size: 24px;
             text-align: left;
         }
 
-        &__right
-        {
-            font-family: 'Azeret-Mono';
-            font-size: 24px;
+        &__right {
+            @extend %heading-3;
+
             text-align: right;
         }
 
-        &__left-from-centre
-        {
-            font-family: 'Azeret-Mono';
-            font-size: 24px;
+        &__left-from-centre {
+            @extend %heading-3;
             text-align: right;
         }
 
-        &__right-from-centre
-        {
-            font-family: 'Azeret-Mono';
-            font-size: 24px;
+        &__right-from-centre {
+            @extend %heading-3;
             text-align: left;
         }
     }
 
-    &__description
-    {
-        &__left
-        {
+    &__description {
+        &__left {
             margin-left: 50px;
         }
 
-        &__right
-        {
+        &__right {
             margin-right: 50px;
         }
 
-        &__left-from-centre
-        {
+        &__left-from-centre {
             margin-right: 50px;
 
         }
 
-        &__right-from-centre
-        {
+        &__right-from-centre {
             margin-left: 50px;
         }
     }
 
-    &__img{
-        &__left
-        {
-            width: 400px;
+    &__img {
+
+        &__left {
+            max-width: 500px;
         }
 
-        &__centre
-        {
-            width: 500px;
+        &__centre {
+            max-width: 500px;
         }
 
-        &__right
-        {
-            width: 350px;
+        &__right {
+            max-width: 500px;
         }
     }
 
-    &__text
-    {
-        font-family: 'Roboto-Light';
-        font-size: 18px;
-        margin-top: 24px;
-
-        &-item
-        {
-            font-family: 'Roboto-Light';
-            line-height: 24px;
-            font-size: 18px;
-            margin-top: 24px;
+    &__text {
+        &-item {
+            @extend %text-2;
+            width: 100%;
         }
 
-        &__left
-        {
+        &__left {
             text-align: left;
         }
 
-        &__right
-        {
+        &__right {
             text-align: right;
         }
     }
 }
 
-.footer {}
+.footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
 
 .contacts {
-    &__social-networks {
-        &-items {}
-
-        &-facebook {}
-
-        &-instagram {}
-
-        &-telegram {}
+    &__item {
+        margin-bottom: 50px;
     }
 
-    &__other-types {
-        &-email {}
+    &__title {
 
-        &-phon {}
+        @extend %heading-2;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+
+        @extend %text-3;
+
+        &-line {
+            letter-spacing: 1px;
+            margin-top: 24px;
+        }
+    }
+
+    &__link {
+        @extend %text-3;
+        text-transform: uppercase;
+        color: #000;
+    }
+
+    &__social-networks {
+
+        &-list {
+            display: flex;
+        }
+
+        &-items {
+            margin-right: 24px;
+        }
+    }
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    &__title {
+        @extend %heading-2;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__item input,
+    textarea {
+        display: block;
+        background-color: white;
+        text-align: center;
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    &__input-item {
+
+        @extend %text-3;
+        border: 1px solid black;
+
+    }
+
+    &__message-text {
+        height: 300px;
+    }
+
+    &__button {
+
+        margin: 0 auto;
+        width: 300px;
+        @extend %text-button;
+        background-color: white;
+        margin-bottom: 50px;
+    }
+
+    &__button:hover {
+        background-color: black;
+        color: white;
     }
 }

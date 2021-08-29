@@ -1,0 +1,59 @@
+@import './fonts-import.scss';
+
+
+%logo-text{
+    margin-left: 55px;
+    margin-top: 50px;
+    position: absolute;
+    font-size: 68px;
+    letter-spacing: 5px;
+    word-wrap: break-word;
+    color: #fff;
+    width: .7em;
+}
+
+%heading-1 {
+    font-family: 'Azeret-Mono';
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+%heading-2{
+    font-family: 'Azeret-Mono';
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+%heading-3{
+    font-family: 'Azeret-Mono';
+    font-size: 24px;
+}
+
+%text-1{
+    font-family: 'Roboto-Light';
+    font-size: 38px;
+    text-align: left;
+}
+
+%text-2{
+    font-family: 'Roboto-Light';
+    line-height: 24px;
+    font-size: 18px;
+    margin-top: 24px;
+}
+
+%text-3{
+    font-family: 'Roboto-Light';
+    letter-spacing: 1px;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+%text-button{
+    font-size: 24px;
+        font-family: 'Roboto-Light';
+        text-transform: uppercase;
+        letter-spacing: 1px;
+}
