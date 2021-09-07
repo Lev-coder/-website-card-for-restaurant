@@ -1,6 +1,6 @@
 # website-card-for-restaurant
 
-https://cocky-lichterman-fd0a1f.netlify.app/
+https://cocky-lichterman-fd0a1f.netlify.app/ (onli frontend)
 
 ## why are there two folders?
 
